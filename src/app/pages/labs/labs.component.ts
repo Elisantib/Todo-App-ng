@@ -1,19 +1,23 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-labs',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  imports: [CommonModule],
+  templateUrl: './labs.component.html',
+  styleUrl: './labs.component.css'
 })
-export class AppComponent {
+export class LabsComponent {
   Welcome = 'Quiero que se muestre en el html';
   tasks = [
     'instalar el angular CLI',
     'Crear proyecto',
     'Crear componentes'
   ]
+  name = 'Elisa';
+  age = '30';
+
+
 }
